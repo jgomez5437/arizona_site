@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Contact Us</title>
+        <meta name="description" content="Contact Form" />
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+       <header>
+        <div class="navbar">
+           <ul class="nav-options">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="phoenix.html">Phoenix</a></li>
+            <li><a href="flagstaff.html">Flagstaff</a></li>
+            <li><a href="tucson.html">Tucson</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+           </ul> 
+        </div>
+       </header>
+       <div class="home_top_space"></div>
+       <div id="home_images">
+        <img class="home_image" src="images/state_arizona (1).png" alt="picture of the state of Arizona">
+       <img class="home_image" src="images/state_seal.png" alt="picture of state seal">
+       </div>
+       <h1 class="home_header">Contact Us</h1>
+       <div id="contact_form_back">
+        <div id="contact_form">
+            <p>For any questions, concerns and/or inquiries, please fill out this contact form:</p>
+            <form action="" class="user_form">
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname" placeholder="First Name"><br><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname" placeholder="Last Name"><br><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="Email"><br><br>
+                <label for="confirmemail">Confirm Email:</label><br>
+                <input type="email" id="confirmemail" name="confirmemail" placeholder="Confirm email" oninput="check_email()">
+                <span id="error_msg"></span><br><br>
+                <label for="text">Comments:</label><br>
+                <input type="text" name="text" id="text" placeholder="Type here"><br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+       </div>
+    </body>
+    <script src="index.js"></script>
+</html>
